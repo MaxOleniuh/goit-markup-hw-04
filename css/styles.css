@@ -22,7 +22,6 @@ body {
   background-color: var(--body-background);
   font-family: "Roboto", sans-serif;
   color: var(--hero-background);
-  margin: 0;
 }
 /* RESET STYLES */
 p {
@@ -78,7 +77,6 @@ ul {
 }
 /* HEADER(NAV) STYLES */
 header {
-  display: block;
   border-bottom: solid 1px var(--cornflower);
 }
 .main-nav {
@@ -99,9 +97,6 @@ header {
   letter-spacing: 0.02em;
 }
 
-.nav-item:last-child {
-  margin-right: 100px;
-}
 /* LOGO */
 .logo {
   margin-right: 76px;
@@ -214,6 +209,10 @@ a {
 }
 .activities-list .activities-item {
   margin-right: 24px;
+}
+
+.activities-list .activities-item:nth-child(3n) {
+  margin-right: 0;
 }
 /* TEAM SECTION STYLES */
 
