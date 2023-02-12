@@ -148,10 +148,15 @@ a {
 
 .solutions {
   background-color: var(--dark-theme);
+  /* BACKGROUND STYLES */
+  background-image: url(../images/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .solutions-title {
   width: 496px;
   margin-left: auto;
@@ -356,6 +361,7 @@ button:focus {
 .btn:focus {
   background: var(--pressed-state);
   color: var(--body-background);
+  /* PROJECT SECTION */
 }
 .project-list {
   display: flex;
