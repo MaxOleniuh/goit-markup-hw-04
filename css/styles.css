@@ -386,7 +386,7 @@ a {
   display: flex;
 }
 .media-title {
-  color: var(--accent);
+  color: var(--body-background);
   font-weight: 500;
   line-height: 1.5;
 }
