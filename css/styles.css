@@ -80,8 +80,6 @@ ul {
 /* HEADER(NAV) STYLES */
 header {
   border-bottom: solid 1px var(--cornflower);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .main-nav {
   display: flex;
@@ -146,6 +144,8 @@ a {
 /* SOLUTIONS STYLES */
 
 .solutions {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--dark-theme);
   text-align: center;
   padding-top: 188px;
@@ -158,7 +158,6 @@ a {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-background.png);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .solutions-title {
@@ -207,7 +206,7 @@ a {
 }
 
 .features-icon {
-  border-radius: 5px;
+  border-radius: 4px;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -249,7 +248,6 @@ a {
 }
 .team-members {
   display: flex;
-  flex-wrap: wrap;
 }
 .team-title {
   margin-top: 0;
@@ -276,6 +274,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
+  font-weight: 500;
   margin-bottom: 8px;
   font-size: 20px;
   line-height: 1.2;
@@ -291,14 +290,14 @@ a {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.social-media-row {
+.social-row {
+  margin-top: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
-  padding: 8px 16px 0 16px;
 }
-.social-media {
+.social-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +307,7 @@ a {
   background-color: var(--brand-color);
   fill: var(--light-background);
 }
-.social-media:hover {
+.social-media:is(:hover, :focus) {
   background-color: var(--pressed-state);
 }
 /* CUSTOMERS SECTION */
@@ -392,15 +391,13 @@ a {
 }
 
 .media-footer {
-  text-align: left;
   margin-left: 120px;
 }
 
-.footer-media-row {
-  padding-top: 16px;
+.footer-media {
+  margin-top: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
 }
 
@@ -415,7 +412,7 @@ a {
   fill: var(--light-background);
 }
 
-.social-media-footer:is(:after, :hover) {
+.social-media-footer:is(:focus, :hover) {
   background-color: var(--success-theme);
 }
 /* portfolio.html STYLES START*/
@@ -427,11 +424,6 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 }
 .filter-list .filter-item:not(:first-child) {
   margin-left: 24px;
