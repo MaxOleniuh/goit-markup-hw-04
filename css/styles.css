@@ -307,7 +307,7 @@ a {
   background-color: var(--brand-color);
   fill: var(--light-background);
 }
-.social-media:is(:hover, :focus) {
+.social-item:is(:hover, :focus) {
   background-color: var(--pressed-state);
 }
 /* CUSTOMERS SECTION */
